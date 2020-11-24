@@ -25,14 +25,51 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" >
+                    <RelativeLayout
 
-                    <TextView
-                        android:id="@+id/textView1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Contenido Tab 1"
-                        android:textSize="25dp"
-                        />
+                        android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/tab45"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/num1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:text="TextView"/>
+                        <TextView
+                            android:id="@+id/suma"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_height="wrap_content"
+                            android:text="+"/>
+                        <TextView
+                            android:id="@+id/num2"
+                            android:layout_marginLeft="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"/>
+
+
+                        <EditText
+                            android:id="@+id/resultado"
+                            android:layout_marginLeft="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tab45"
+                            android:text="Comprobar"/>
+
+                    </RelativeLayout>
                 </LinearLayout>
 
                 <LinearLayout android:id="@+id/tab2"
